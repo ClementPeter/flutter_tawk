@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tawk_app/screens/support_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,13 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
-                  //  Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) =>
-                  //       // SupportPage(),
-                  //   ),
-                  // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SupportPage(),
+              ),
+            );
           },
           tooltip: 'Increment',
           label: Row(
